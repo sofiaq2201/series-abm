@@ -14,7 +14,7 @@ public class SerieService {
     SerieRepository serieRepo;
     
     public List<Serie> getAllSeries(){
-        return  serieRepo.findAll();
+        return  serieRepo.findByOrderByIdAsc();
     }
     
     public void saveSerie(Serie s){
